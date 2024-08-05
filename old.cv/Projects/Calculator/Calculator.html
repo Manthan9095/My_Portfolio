@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator_style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="main_border">
+            <div id="display">
+                <p id="input_line"></p>
+                <p id="ans_line"></p>
+            </div>
+            <div id="cal_functions">
+                <table>
+                    <tr>
+                        <td class="button_space"><button class="input_function_btn" onclick="reset()">AC</button></td>
+                        <td class="button_space"><button class="input_function_btn" onclick="bckspc()"><</button></td>
+                        <td class="button_space"><button class="input_function_btn" onclick="memplus()">MC</button></td>
+                        <td class="button_space"><button class="input_function_btn" onclick="memmin()">M-</button></td>
+                        <td class="button_space"><button class="input_function_btn" onclick="memadd()">M+</button></td>
+                    </tr>
+                    <tr>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(7)">7</button></td>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(8)">8</button></td>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(9)">9</button></td>
+                        <td class="button_space"><button class="input_sym_btn" onclick="inp('%')">%</button></td>
+                        <td class="button_space"><button class="input_sym_btn" onclick="inp('√')">√</button></td>
+                    </tr>
+                    <tr>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(4)">4</button></td>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(5)">5</button></td>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(6)">6</button></td>
+                        <td class="button_space"><button class="input_sym_btn" onclick="inp('*')">x</button></td>
+                        <td class="button_space"><button class="input_sym_btn" onclick="inp('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(1)">1</button></td>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(2)">2</button></td>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(3)">3</button></td>
+                        <td class="button_space"><button class="input_sym_btn" onclick="inp('+')">+</button></td>
+                        <td class="button_space"><button class="input_sym_btn" onclick="inp('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp(0)">0</button></td>
+                        <td class="button_space"><button class="input_num_btn" onclick="inp('.')">.</button></td>
+                        <td class="button_space"><button class="input_num_btn" onclick="ans()">=</button></td>
+                        <td class="button_space"><button class="input_sym_btn" onclick="inp('&#40')">(</button></td>
+                        <td class="button_space"><button class="input_sym_btn" onclick="inp('&#41')">)</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var mem;
+    function memadd(){
+        mem = document.getElementById("ans_line").innerHTML;
+        return mem;
+    }
+    function memmin(){
+        mem = "";
+        return mem;
+    }
+    function memplus(){
+        document.getElementById("input_line").innerHTML += mem;
+        return mem;
+    }
+    function inp(action) {
+        document.getElementById("input_line").innerHTML += action
+        return action
+    }
+    function ans() {
+        var a = document.getElementById("input_line").innerHTML
+        var b = eval(a)
+        document.getElementById("ans_line").innerHTML = b
+        return b
+    }
+    function reset(){
+        document.getElementById("input_line").innerHTML = "";
+        document.getElementById("ans_line").innerHTML = "";
+    }
+    function bckspc(){
+    var a = document.getElementById("input_line").innerHTML
+    var b = a.length
+    var c = b-1
+    document.getElementById("input_line").innerHTML = a.slice(0,c)
+    }
+</script>
+
+</html>
