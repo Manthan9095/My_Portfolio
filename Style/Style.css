@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* margin: 0; */
+  background-color: dimgray;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(30, 30, 30);
+}
+
+#bckg {
+  /* background-color: rgb(30, 30, 30); */
+  /* below css comand is to be removed afterwards. */
+  height: 111vh;
+}
+
+#nav_area {
+  display: flex;
+  justify-content: center;
+}
+
+@media(max-width: 515px) {
+  #nav_area {
+    background-color: rgb(151, 149, 129);
+  }
+}
+
+#nav_bar {
+  background-color: rgb(240, 157, 4);
+  width: 65vw;
+  height: 50px;
+  border-radius: 1em 1em 1em 1em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media(max-width: 515px) {
+  #nav_bar {
+    width: 100%;
+    border-radius: 0em;
+    justify-content: space-between;
+  }
+}
+
+#nav_title {
+  display: none;
+}
+
+@media(max-width: 515px) {
+  #nav_title {
+    display: block;
+    margin-left: 5%;
+  }
+}
+
+#nav_toggle_btn {
+  display: none;
+}
+
+@media(max-width: 515px) {
+  #nav_toggle_btn {
+    display: block;
+    background-color: rgb(107, 64, 0, 0.5);
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 1em;
+    position: relative;
+    color: rgb(104, 47, 0);
+    margin-right: 5%;
+    z-index: 10;
+    font-weight: 800;
+    font-size: medium;
+  }
+}
+
+#nav_toggle {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media(max-width: 515px) {
+  #nav_toggle {
+    background-color: rgb(151, 149, 129, 0.85);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    display: block;
+    align-content: center;
+    /* below property to be changed to toggle it with javascript */
+    display: none;
+  }
+}
+
+.nav_btn {
+  height: 2.2em;
+  width: 30%;
+  /* border: 0.1em solid black; */
+  background-color: rgb(190, 130, 0);
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+@media(max-width: 515px) {
+  .nav_btn {
+    /* position: relative; */
+    border-radius: 0px;
+    margin-bottom: 1em;
+    top: -160px;
+    width: 100%;
+    left: 3%;
+  }
+}
+
+.nav_btn:hover {
+  background-color: rgb(211, 185, 129);
+}
+
+.nav_btn a {
+  color: black;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
