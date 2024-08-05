@@ -95,8 +95,11 @@ body {
     height: 100vh;
     width: 100vw;
     top: 0px;
-    display: block;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* display: block; */
+    /* align-content: center; */
     /* below property to be changed to toggle it with javascript */
     display: none;
   }
@@ -117,14 +120,20 @@ body {
   transition: 0.3s;
 }
 
+@media(max-width: 750px) {
+  .nav_btn {
+    font-size: small;
+  }
+}
+
 @media(max-width: 515px) {
   .nav_btn {
     /* position: relative; */
     border-radius: 0px;
     margin-bottom: 1em;
-    top: -160px;
-    width: 100%;
-    left: 3%;
+    border-radius: 1em;
+    width: 65%;
+    /* font-size: small; */
   }
 }
 
