@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     font-size: large;
-    height: 18vh;
+    /* height: 18vh; */
     text-align: center;
   }
 }
@@ -63,26 +63,32 @@
   font-size: 0.7em;
 }
 
+@media(max-width: 515px) {
+  #intro_bio{
+    /* bellow property to be change when developer changes the text of bio */
+    min-height: 140px;
+  }
+}
+
 #intro_img {
   /* background-color: aqua; */
-  padding: 1em;
+  /* padding: 1em; */
   height: 25vw;
   width: 30vw;
   align-self: center;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
 @media(max-width: 515px) {
   #intro_img{
-    height: 30vh;
-    width: 60vw;
+    height: 53vw;
+    justify-content: center;
   }
 }
 
 #intro_img img {
-  width: 100%;
+  height: 100%;
 }
 
 #social_area {
