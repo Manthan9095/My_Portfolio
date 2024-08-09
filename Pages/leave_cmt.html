@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Manthan's Portfolio</title>
   <link rel="stylesheet" href="../Style/Style.css">
   <!-- Extermal links -down- -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,40 +23,45 @@
           <h2 id="nav_title">
             Portfolio
           </h2>
-          <button id="nav_toggle_btn">
+          <button id="nav_toggle_btn" onclick="nav_toggle()">
             X
           </button>
           <div id="nav_toggle">
-            <div class="nav_btn">
-              <!-- remove internal style from upper div and this comment also-->
+            <div class="nav_btn" onclick="home()">
               <a href="../index.html">
-                Home
+                <p>
+                  Home
+                </p>
               </a>
             </div>
-            <div class="nav_btn">
+            <div class="nav_btn" onclick="cv()">
               <a href="cv.html">
-                Curriculum Vitae
+                <p>
+                  Curriculum Vitae
+                </p>
               </a>
             </div>
-            <div class="nav_btn" style="background-color: rgb(255, 225, 125); border-color: rgb(255, 225, 125);">
-              <a href="leave_cmt.html">
-                Leave a Comment
+            <div class="nav_btn" onclick="cmnt()">
+              <a href="Pages/leave_cmt.html">
+                <p>
+                  Leave a Comment
+                </p>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div id="intro">
-        <div id="intro_text">
-          <h1 id="intro_name">Manthan Rathod</h1>
-          <h1 id="intro_p"></h1>
+      <div id="home_page">
+        <h1>Leave CMT</h1>
+        <div style="display: flex; justify-content: center; background-color: rgb(187, 187, 187); font-size: xx-large;">
+          <a href="../old.cv/index.html">OLD CV</a>
         </div>
-        <div id="my_photo">
-          <!-- <img src="Images/Profile_Photo/Me.jpg.png" alt="DP"> -->
-        </div>
+        <button id="test_btn" onclick="test_btn()">buibui</button>
+        <button id="test_btn" onclick="test_btn1()">buibui1</button> 
       </div>
     </div>
   </div>
 </body>
+<script src="../Scripts/script.js"></script>
 
 </html>

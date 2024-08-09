@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manthan's Portfolio</title>
   <link rel="stylesheet" href="Style/Style.css">
+  <link rel="stylesheet" href="Style/homeStyle.css">
   <!-- Extermal links -down- -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,40 +29,68 @@
           </button>
           <div id="nav_toggle">
             <div class="nav_btn" onclick="home()">
-              <p>
-                Home
-              </p>
+              <a href="index.html">
+                <p>
+                  Home
+                </p>
+              </a>
             </div>
             <div class="nav_btn" onclick="cv()">
-              <p>
-                Curriculum Vitae
-              </p>
+              <a href="Pages/cv.html">
+                <p>
+                  Curriculum Vitae
+                </p>
+              </a>
             </div>
             <div class="nav_btn" onclick="cmnt()">
-              <p>
-                Leave a Comment
-              </p>
+              <a href="Pages/leave_cmt.html">
+                <p>
+                  Leave a Comment
+                </p>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div id="home_page">
-        <h1>Home Page</h1>
-        <div style="display: flex; justify-content: center; background-color: rgb(187, 187, 187); font-size: xx-large;">
-          <a href="old.cv/index.html">OLD CV</a>
+        <div id="intro_area">
+          <div id="intro_text_area">
+            <p id="my_name"></p>
+            <p id="intro_bio"></p>
+          </div>
+          <div id="intro_img">
+            <img src="Images/Profile_Photo/man_working_art.png" alt="img">
+          </div>
         </div>
-        <button id="test_btn" onclick="test_btn()">buibui</button>
-        <button id="test_btn" onclick="test_btn1()">buibui1</button>
+        <div id="social_area">
+          <div id="grid_soc_med">
+            <div class="soc_med_btn">
+              <a href="">
+                <h3>LinkedIn</h3>
+              </a>
+            </div>
+            <div class="soc_med_btn">
+              <h3>Telegram</h3>
+            </div>
+            <div class="soc_med_btn">
+              <h3>Github</h3>
+            </div>
+            <div class="soc_med_btn">
+              <h3>E-mail</h3>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="cv_page" style="display: none;">
-        <h1>CV Page</h1>
+      <!-- <h1 style="background-color: bisque;">Home Page</h1>
+      <div style="display: flex; justify-content: center; background-color: rgb(187, 187, 187); font-size: xx-large;">
+        <a href="old.cv/index.html">OLD CV</a>
       </div>
-      <div id="lc_page" style="display: none;">
-        <h1>Comment Page</h1>
-      </div>
+      <button id="test_btn" onclick="test_btn()">buibui</button>
+      <button id="test_btn" onclick="test_btn1()">buibui1</button> -->
     </div>
   </div>
+  </div>
 </body>
-<script src="script.js"></script>
+<script src="Scripts/script.js"></script>
 
 </html>
