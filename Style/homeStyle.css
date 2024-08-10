@@ -89,6 +89,16 @@
 
 #intro_img img {
   height: 100%;
+  animation: intro-img 3s;
+}
+
+@keyframes intro-img{
+  from{
+    opacity: 0%;
+  }
+  to{
+    opacity: 100%;
+  }
 }
 
 #social_area {
