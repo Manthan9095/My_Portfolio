@@ -4,10 +4,14 @@ let navShow = true;
 function nav_toggle() {
   if (navShow) {
     navSection.style.display = "flex";
+    document.getElementById("close_icon_img").style.display = "block";
+    document.getElementById("menu_icon_img").style.display = "none";
     navShow = false;
   }
   else {
     navSection.style.display = "none";
+    document.getElementById("close_icon_img").style.display = "none";
+    document.getElementById("menu_icon_img").style.display = "block";
     navShow = true;
   }
   return navShow;
@@ -28,7 +32,7 @@ function typeWriting(){
   }
   else{
     i = 0;
-    speed = 0.1
+    speed = 1
     typeWriting2();
   }
   // return i;
