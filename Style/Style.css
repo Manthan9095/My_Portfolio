@@ -38,6 +38,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: fixed;
 }
 
 @media(max-width: 515px) {
