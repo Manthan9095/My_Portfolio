@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
-    margin-top: 14vw;
+    margin-top: 17vw;
   }
 }
 
@@ -249,4 +249,125 @@
   .soc_med_txt {
     font-size: 2em;
   }
+}
+
+#project_area {
+  /* remove brlow color afterwards */
+  background-color: rgb(37, 34, 29);
+  height: max-content;
+  padding: 3.5vw;
+  /* padding-left: 8vw; */
+  /* padding-right: 8vw; */
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+}
+
+.project_box {
+  background-color: rgb(29, 78, 44);
+  border: 0.3rem solid rgb(0, 151, 88);
+  border-radius: 2rem;
+  margin: 0.5rem;
+  margin-top: 3rem;
+  /* height: 20vw; */
+  /* width: 15vw; */
+  height: 24rem;
+  width: 18rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width: 654px) {
+  .project_box {
+    height: 18rem;
+    width: 13rem;
+  }
+}
+
+.project_img_box {
+  background-color: rgb(189, 178, 178);
+  height: 50%;
+}
+
+.project_info_box {
+  /* background-color: brown; */
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project_name_box {
+  background-color: rgb(8, 39, 8);
+  height: 25%;
+  width: 90%;
+  border-radius: 1em;
+  margin-top: 5%;
+  overflow: hidden;
+  align-content: center;
+}
+
+.Project_title {
+  /* font-size: xx-large; */
+  font-size: 1.5em;
+  width: max-content;
+  position: relative;
+  animation: pname 7s linear infinite;
+  color: rgb(235, 235, 125);
+}
+
+@keyframes pname {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -150%;
+  }
+}
+
+.project_tags {
+  /* background-color: red; */
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.project_tags p {
+  padding-left: 5%;
+  padding-right: 5%;
+  align-content: center;
+  width: max-content;
+  height: 35%;
+  background-color: rgb(67, 122, 104);
+  border-radius: 0.5em;
+  color: bisque;
+}
+
+@media(max-width: 654px) {
+  .project_tags {
+    font-size: 0.8em;
+  }
+}
+
+.visit_btn {
+  margin-top: 2.7%;
+  height: 20%;
+  width: 60%;
+  border-radius: 0.8em;
+  text-align: center;
+  align-content: center;
+  font-size: 1.2em;
+  background-color: rgb(235, 235, 125);
+}
+
+.visit_btn a {
+  text-decoration: none;
+  color: black;
 }

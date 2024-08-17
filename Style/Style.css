@@ -14,7 +14,8 @@ body {
 #bckg {
   /* background-color: rgb(30, 30, 30); */
   /* below css comand is to be removed afterwards. */
-  height: 111vh;
+  /* height: 111vh; */
+  padding-bottom: 15vh;
   background-color: rgb(30, 30, 30);
 }
 
@@ -39,6 +40,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
+  animation: nav_anim 1s linear;
 }
 
 @media(max-width: 515px) {
