@@ -40,7 +40,17 @@ body {
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
-  animation: nav_anim 1s linear;
+  animation: nav_anim 0.5s linear;
+}
+
+@keyframes nav_anim {
+  from {
+    top: -50px;
+  }
+
+  to {
+    top: 0px;
+  }
 }
 
 @media(max-width: 515px) {

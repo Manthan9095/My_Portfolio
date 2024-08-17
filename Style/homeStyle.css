@@ -252,15 +252,10 @@
 }
 
 #project_area {
-  /* remove brlow color afterwards */
-  background-color: rgb(37, 34, 29);
   height: max-content;
   padding: 3.5vw;
-  /* padding-left: 8vw; */
-  /* padding-right: 8vw; */
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: space-around;
 }
 
