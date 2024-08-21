@@ -263,7 +263,8 @@
   background-color: rgb(29, 78, 44);
   border: 0.3rem solid rgb(0, 151, 88);
   border-radius: 2rem;
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
+  margin: 2rem;
   margin-top: 3rem;
   /* height: 20vw; */
   /* width: 15vw; */
@@ -276,8 +277,10 @@
 
 @media(max-width: 654px) {
   .project_box {
-    height: 18rem;
-    width: 13rem;
+    /* height: 18rem; */
+    /* width: 13rem; */
+    /* height: 22rem; */
+    /* width: 17rem; */
   }
 }
 
@@ -365,4 +368,12 @@
 .visit_btn a {
   text-decoration: none;
   color: black;
+}
+
+.title_name{
+  padding-top: 2vh;
+  color: rgb(0, 192, 58);
+  width: 100%;
+  /* background-color: blueviolet; */
+  text-align: center;
 }
