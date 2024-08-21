@@ -275,15 +275,6 @@
   flex-direction: column;
 }
 
-@media(max-width: 654px) {
-  .project_box {
-    /* height: 18rem; */
-    /* width: 13rem; */
-    /* height: 22rem; */
-    /* width: 17rem; */
-  }
-}
-
 .project_img_box {
   background-color: rgb(189, 178, 178);
   height: 50%;
