@@ -24,13 +24,13 @@ var speed = 30;
 
 typeWriting();
 
-function typeWriting(){
+function typeWriting() {
   if (i < nameText.length) {
     document.getElementById("my_name").innerHTML += nameText.charAt(i);
     i++;
     setTimeout(typeWriting, speed);
   }
-  else{
+  else {
     i = 0;
     speed = 1
     typeWriting2();
@@ -38,7 +38,7 @@ function typeWriting(){
   // return i;
 }
 
-function typeWriting2(){
+function typeWriting2() {
   console.log(i);
   if (i < bioText.length) {
     document.getElementById("intro_bio").innerHTML += bioText.charAt(i);
@@ -48,87 +48,50 @@ function typeWriting2(){
   // return 0;
 }
 
-// const textEl = document.getElementById('my_name');
-// const text = "Hello, I'm Manthan Rathod";
-// let idx = 1;
-// // let speed = 300 / 5;
-// let speed = 45
+// let slideNumber = 1;
+// showSlide(slideNumber);
 
-// writeText()
-
-// function writeText() {
-//   textEl.innerText = text.slice(0, idx);
-//   idx++;
-//   // while (idx<text.length) {
-//   //   console.log("fytfcvhuyfv");
-//   // }
-  
-//   setTimeout(writeText, speed);
-// }
-// test_btn()
-
-// function test_btn() {
-//   console.log("Did i came last..?")
+// function change(req) {
+//   showSlide(slideNumber += req);
 // }
 
-
-
-// const textEl = document.getElementById('my_name');
-// const text = "Hello, I'm Manthan Rathod";
-// let idx = 1;
-// // let speed = 300 / 5;
-// let speed = 60
-
-// writeText()
-
-// function writeText() {
-//   textEl.innerText = text.slice(0, idx);
-//   idx++;
-
-//   // if (idx > text.length) {
-//   //   idx =1;
-//   // }
-
-//   setTimeout(writeText, speed);
-// }
-// test_btn()
-
-// function test_btn(){
-//   console.log("Did i came last..?")
-// }
-
-
-// -------------------------------------------------------
-// old code for test-------------->
-
-
-// writeText = () => {
-//   while (idx < text.length) {
-//     text.innerText = textEl.slice(0, idx);
-//     idx++;
+// function showSlide(req) {
+//   let a;
+//   let slide = document.getElementsByClassName("project_img")
+//   if (req > slide.length) {
+//     slideNumber = 1
 //   }
+//   else if (req < 1) {
+//     slideNumber = slide.length
+//   }
+//   for (a = 0; a < slide.length; a++) {
+//     slide[a].style.display = "none";
+//   }
+//   slide[slideNumber -1].style.display = "block";
 
-//   return 0;
+//   console.log("req="+req)
+//   console.log("slide="+slide)
+//   console.log("slideNumber="+slideNumber)
+//   console.log("slide length="+slide.length)
+//   console.log("a="+a)
 // }
 
-// function home(){
-//   hidecv();
-//   return 0;
+// projectIdAdd()
+
+// function projectIdAdd(){
+//   let a = document.getElementsByClassName("project_img_box").length;
+//   for (let b = 0; b < a; b++) {
+//     console.log(b);
+    
+//   }
 // }
 
-// function showhome(){
-//   document.getElementById("home_page").style = "display: block;";
-// }
+// slide()
 
-// function hidecv(){
-//   document.getElementById("cv_page").style = "display: none;";
-// }
+// function slide() {
+//   let i = document.getElementsByClassName("").
+//     console.log(i)
+//   for (let a = 0; a < array.length; a++) {
 
-// function test_btn() {
-//   document.getElementById("nav_area").style = "display: none";
-// }
-// function test_btn1() {
-//   document.getElementById("nav_area").style = "display: block;"
-//   document.getElementById("nav_area").style = "justify-content: center;"
-//   ------------ in show and hide method changing display property to block the justify-content is sacrifised, that is why we add it again------------
+//   }
 // }
