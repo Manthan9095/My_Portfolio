@@ -454,6 +454,12 @@
   box-shadow: 0em 0.1em 0.4em 0em rgb(88, 150, 58);
 }
 
+@media(max-width: 654px) {
+  .title_uderline {
+    height: 0.6vw;
+  }
+}
+
 .title_pl{
   border-radius: 0vw 0vw 1vw 0vw;
 }
@@ -471,6 +477,6 @@
 @media(max-width: 654px) {
   .dp {
     height: 2.5vw;
-    width: 35%;
+    width: 35.05%;
   }
 }
