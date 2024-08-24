@@ -48,33 +48,33 @@ function typeWriting2() {
   // return 0;
 }
 
-// let slideNumber = 1;
-// showSlide(slideNumber);
+let slideNumber = 1;
+showSlide(slideNumber);
 
-// function change(req) {
-//   showSlide(slideNumber += req);
-// }
+function change(req) {
+  showSlide(slideNumber += req);
+}
 
-// function showSlide(req) {
-//   let a;
-//   let slide = document.getElementsByClassName("project_img")
-//   if (req > slide.length) {
-//     slideNumber = 1
-//   }
-//   else if (req < 1) {
-//     slideNumber = slide.length
-//   }
-//   for (a = 0; a < slide.length; a++) {
-//     slide[a].style.display = "none";
-//   }
-//   slide[slideNumber -1].style.display = "block";
+function showSlide(req) {
+  let a;
+  let slide = document.getElementsByClassName("project_img")
+  if (req > slide.length) {
+    slideNumber = 1
+  }
+  else if (req < 1) {
+    slideNumber = slide.length
+  }
+  for (a = 0; a < slide.length; a++) {
+    slide[a].style.display = "none";
+  }
+  slide[slideNumber -1].style.display = "block";
 
-//   console.log("req="+req)
-//   console.log("slide="+slide)
-//   console.log("slideNumber="+slideNumber)
-//   console.log("slide length="+slide.length)
-//   console.log("a="+a)
-// }
+  // console.log("req="+req)
+  // console.log("slide="+slide)
+  // console.log("slideNumber="+slideNumber)
+  // console.log("slide length="+slide.length)
+  // console.log("a="+a)
+}
 
 // projectIdAdd()
 
