@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(172, 173, 177);
+}
+#main_border{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    left: 34vw;
+    top: 10vh;
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(71, 50, 50);
+}
+#display{
+    height: 60px;
+    width: 98%;
+    border:  5px solid black;
+    background-color: rgb(224, 224, 224);
+}
+#input_line{
+    margin-top: 3px;
+    font-size: large;
+    text-align: right;
+    margin-right: 10px;
+}
+#ans_line{
+    font-size: xx-large;
+    text-align: right;
+    margin-right: 10px;
+}
+#cal_functions{
+    height: 80%;
+    width: 100%;
+    margin-top: 15px;
+    /* border: 0.5px solid black; */
+}
+.button_space{
+    border:  2px solid transparent;
+    height: 65.5px;
+    width: 75px;
+}
+.input_function_btn{
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+    background-color: rgb(102, 212, 102);
+    border-radius: 10px;
+}
+.input_num_btn{
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+    border-radius: 10px;
+}
+.input_sym_btn{
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+    background-color: rgb(41, 157, 185);
+    border-radius: 10px;
+}

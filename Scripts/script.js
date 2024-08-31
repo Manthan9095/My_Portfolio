@@ -48,50 +48,24 @@ function typeWriting2() {
   // return 0;
 }
 
-let slideNumber = 1;
-showSlide(slideNumber);
+// let slideNumber = 1;
+// showSlide(slideNumber);
 
-function change(req) {
-  showSlide(slideNumber += req);
-}
-
-function showSlide(req) {
-  let a;
-  let slide = document.getElementsByClassName("project_img")
-  if (req > slide.length) {
-    slideNumber = 1
-  }
-  else if (req < 1) {
-    slideNumber = slide.length
-  }
-  for (a = 0; a < slide.length; a++) {
-    slide[a].style.display = "none";
-  }
-  slide[slideNumber -1].style.display = "block";
-
-  // console.log("req="+req)
-  // console.log("slide="+slide)
-  // console.log("slideNumber="+slideNumber)
-  // console.log("slide length="+slide.length)
-  // console.log("a="+a)
-}
-
-// projectIdAdd()
-
-// function projectIdAdd(){
-//   let a = document.getElementsByClassName("project_img_box").length;
-//   for (let b = 0; b < a; b++) {
-//     console.log(b);
-    
-//   }
+// function change(req) {
+//   showSlide(slideNumber += req);
 // }
 
-// slide()
-
-// function slide() {
-//   let i = document.getElementsByClassName("").
-//     console.log(i)
-//   for (let a = 0; a < array.length; a++) {
-
+// function showSlide(req) {
+//   let a;
+//   let slide = document.getElementsByClassName("project_img")
+//   if (req > slide.length) {
+//     slideNumber = 1
 //   }
+//   else if (req < 1) {
+//     slideNumber = slide.length
+//   }
+//   for (a = 0; a < slide.length; a++) {
+//     slide[a].style.display = "none";
+//   }
+//   slide[slideNumber -1].style.display = "block";
 // }
