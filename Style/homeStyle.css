@@ -350,15 +350,14 @@
   margin-top: 5%;
   overflow: hidden;
   align-content: center;
+  font-size: 1.5em;
+  color: rgb(235, 235, 125);
 }
 
 .Project_title {
-  /* font-size: xx-large; */
-  font-size: 1.5em;
   width: max-content;
   position: relative;
   animation: pname 7s linear infinite;
-  color: rgb(235, 235, 125);
 }
 
 @keyframes pname {
@@ -369,6 +368,10 @@
   100% {
     left: -150%;
   }
+}
+
+.no_move {
+  margin-left: 8%;
 }
 
 .project_tags {
