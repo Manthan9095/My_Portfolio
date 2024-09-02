@@ -1,25 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  /* font-size: large; */
   margin: 0px;
 }
 
 #navbar {
   height: 35px;
-  width: 100vw;
+  /* width: 100vw; */
   background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: space-between;
   font-size: small;
 }
 
-/* @media(max-width: 1000px) {
-  #navbar {
-    font-size: x-small;
-  }
-} */
-
-@media(max-width: 1025px) {
+@media(max-width: 800px) {
   #navbar {
     display: none;
   }
@@ -67,29 +66,33 @@ body {
 
 #menu-bar {
   height: 75px;
-  width: 100vw;
   background-color: rgb(49, 56, 70);
   display: flex;
   /* justify-content: space-between; */
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 #logo {
+  align-content: center;
   /* height: 100%; */
   /* width: fit-content; */
   /* width: 10vw; */
 
-  padding-left: 3vw;
-  display: flex;
+  padding-left: 3%;
+  /* padding-left: 3vw; */
+  /* display: flex; */
 
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
   
   /* background-color: black; */
 }
 
 #logo img{
-  min-height: 1%;
+  /* min-width: 10vw; */
+  max-width: 100%;
+  max-height: 100%;
+  /* min-height: 1%; */
 }
 
 #menu-btn-area {
@@ -177,5 +180,5 @@ body {
 #ad-slides {
   background-color: purple;
   height: 90vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
