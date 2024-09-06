@@ -35,7 +35,7 @@ function typeWriting() {
     speed = 1
     typeWriting2();
   }
-  // return i;
+  return 0;
 }
 
 function typeWriting2() {
@@ -45,27 +45,53 @@ function typeWriting2() {
     i++;
     setTimeout(typeWriting2, speed);
   }
-  // return 0;
+  return 0;
 }
 
-// let slideNumber = 1;
-// showSlide(slideNumber);
+let imgBoxe = document.getElementsByClassName("project_img_box");
 
-// function change(req) {
-//   showSlide(slideNumber += req);
-// }
+for (let boxCount = 0; boxCount < imgBoxe.length; boxCount++) {
+  imgBoxe[boxCount].id = `box${boxCount}`;
+}
 
-// function showSlide(req) {
-//   let a;
-//   let slide = document.getElementsByClassName("project_img")
-//   if (req > slide.length) {
-//     slideNumber = 1
-//   }
-//   else if (req < 1) {
-//     slideNumber = slide.length
-//   }
-//   for (a = 0; a < slide.length; a++) {
-//     slide[a].style.display = "none";
-//   }
-//   slide[slideNumber -1].style.display = "block";
-// }
+for (let boxCount = 0; boxCount < imgBoxe.length; boxCount++) {
+  let numberOfChild = document.getElementById(`box${boxCount}`).childElementCount;
+  for (let c = 0; c < numberOfChild; c++) {
+    document.getElementById(`box${boxCount}`).children[c].style.display = "none";
+  }
+  document.getElementById(`box${boxCount}`).children[0].style.display = "block";
+  document.getElementById(`box${boxCount}`).children[numberOfChild - 2].style.display = "block";
+  document.getElementById(`box${boxCount}`).children[numberOfChild - 1].style.display = "block";
+}
+
+function change(req, boxCount) {
+  let numberOfChild = document.getElementById(`box${boxCount}`).childElementCount;
+  let imgCount = numberOfChild - 2
+  let t = document.getElementById(`box${boxCount}`);
+  let currentImg;
+  for (let a = 0; a < imgCount; a++) {
+    if (t.children[a].style.display == "block") {
+      currentImg = a;
+    }
+  }
+  if (req == 1 && currentImg < imgCount - 1) {
+    t.children[currentImg].style.display = "none";
+    t.children[currentImg + 1].style.display = "block";
+    console.log('first')
+  }
+  else if (req == 1 && currentImg == imgCount - 1) {
+    t.children[currentImg].style.display = "none";
+    t.children[0].style.display = "block";
+    console.log('second')
+  }
+  else if (req == -1 && currentImg < imgCount && currentImg !== 0) {
+    t.children[currentImg].style.display = "none";
+    t.children[currentImg - 1].style.display = "block";
+    console.log('third')
+  }
+  else {
+    t.children[0].style.display = "none";
+    t.children[imgCount -1].style.display = "block";
+    console.log('fourth')
+  }
+}
