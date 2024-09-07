@@ -1,6 +1,7 @@
 let navSection = document.getElementById("nav_toggle");
 let navShow = true;
 
+// mobile view icon toggle function
 function nav_toggle() {
   if (navShow) {
     navSection.style.display = "flex";
@@ -24,6 +25,7 @@ var speed = 30;
 
 typeWriting();
 
+// code for typing effect on page load
 function typeWriting() {
   if (i < nameText.length) {
     document.getElementById("my_name").innerHTML += nameText.charAt(i);
@@ -38,6 +40,7 @@ function typeWriting() {
   return 0;
 }
 
+// code for typing effect on page load
 function typeWriting2() {
   console.log(i);
   if (i < bioText.length) {
@@ -50,10 +53,12 @@ function typeWriting2() {
 
 let imgBoxe = document.getElementsByClassName("project_img_box");
 
+// array to give each box a unique id
 for (let boxCount = 0; boxCount < imgBoxe.length; boxCount++) {
   imgBoxe[boxCount].id = `box${boxCount}`;
 }
 
+// this code allows to show only one image on the page load for each box
 for (let boxCount = 0; boxCount < imgBoxe.length; boxCount++) {
   let numberOfChild = document.getElementById(`box${boxCount}`).childElementCount;
   for (let c = 0; c < numberOfChild; c++) {
@@ -64,6 +69,7 @@ for (let boxCount = 0; boxCount < imgBoxe.length; boxCount++) {
   document.getElementById(`box${boxCount}`).children[numberOfChild - 1].style.display = "block";
 }
 
+// function for image changing button
 function change(req, boxCount) {
   let numberOfChild = document.getElementById(`box${boxCount}`).childElementCount;
   let imgCount = numberOfChild - 2

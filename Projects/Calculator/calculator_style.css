@@ -6,17 +6,25 @@
     height: 100vh;
     width: 100%;
     background-color: rgb(172, 173, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #main_border{
     position: relative;
     height: 450px;
     width: 400px;
-    left: 34vw;
-    top: 10vh;
+    /* left: 34vw;
+    top: 10vh; */
     padding: 20px;
     border: 2px solid transparent;
     border-radius: 10px;
     background-color: rgb(71, 50, 50);
+}
+@media(max-width: 500px){
+    #main_border{
+        transform: scale(0.7);
+    }
 }
 #display{
     height: 60px;
