@@ -20,7 +20,7 @@ function nav_toggle() {
 
 var i = 0;
 var nameText = "Hello, I'm Manthan Rathod";
-let bioText = "I'm passionate about creating beautiful and functional websites that meet the needs of my clients and users. I have just finished my web designing course from 'Krishna Institute of Coding Technology, Ahmedabad'. And i have good knowledge and skills of HTML, CSS & JavaScript. Right now i'm polishing my jQuary & Bootstrap skills. Plus I'm learning C-Language & C++ Language from the same institute.";
+let bioText = "I'm passionate about learning new technologies, which led me to dive into coding. I began by studying HTML, CSS, JavaScript, jQuery, and Bootstrap, laying a strong foundation in web development. In addition, I expanded my skill set by learning C and C++ at the Krishna Institute of Coding Technology (KICT) in Ahmedabad. This diverse skill set has equipped me with a robust understanding of both front-end and back-end programming. Currently, I am focused on refining my skills to produce high-quality work and am committed to continuous improvement in this field. I actively seek out new challenges and projects to apply my knowledge, aiming to stay at the forefront of technological advancements and contribute meaningfully to the industry.";
 var speed = 30;
 
 typeWriting();

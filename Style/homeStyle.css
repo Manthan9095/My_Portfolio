@@ -61,7 +61,7 @@
 
 #intro_bio {
   font-size: large;
-  font-size: 0.7em;
+  font-size: 0.55em;
 }
 
 @media(max-width: 515px) {
