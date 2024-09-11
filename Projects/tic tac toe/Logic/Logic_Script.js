@@ -1,150 +1,59 @@
-a = "O";
+let turn = "O";
+
+function move(r, c) {
+  document.getElementById(`${r}-${c}`).innerHTML = turn;
+  check();
+  if (turn === "O") {
+    turn = "X"
+  }
+  else if (turn === "X") {
+    turn = "O"
+  }
+  document.getElementById(`${r}-${c}`).removeAttribute("onclick");
+  return turn;
+}
+
+let n = document.getElementsByClassName("game-btn");
+
 function check() {
-  // first horizontal line
-  if (document.getElementById("1-1").innerHTML == "O" &&
-    document.getElementById("1-2").innerHTML == "O" &&
-    document.getElementById("1-3").innerHTML == "O") {
-    document.getElementById("msg").innerHTML = "O - Wins";
-    document.querySelectorAll(".game-btn").removeAttribute("onclick");
-    console.log("first line");
+  if ((n[0].innerHTML === "O" && n[1].innerHTML === "O" && n[2].innerHTML === "O") || (n[0].innerHTML === "X" && n[1].innerHTML === "X" && n[2].innerHTML === "X")) {
+    win();
   }
-  else if (document.getElementById("1-1").innerHTML == "X" &&
-    document.getElementById("1-2").innerHTML == "X" &&
-    document.getElementById("1-3").innerHTML == "X") {
-    document.getElementById("msg").innerHTML = "X - Wins";
+
+  else if ((n[3].innerHTML === "O" && n[4].innerHTML === "O" && n[5].innerHTML === "O") || (n[3].innerHTML === "X" && n[4].innerHTML === "X" && n[5].innerHTML === "X")) {
+    win();
   }
-  // second horizontal line
-  else if (document.getElementById("2-1").innerHTML == "O" &&
-    document.getElementById("2-2").innerHTML == "O" &&
-    document.getElementById("2-3").innerHTML == "O") {
-    document.getElementById("msg").innerHTML = "O - Wins";
+
+  else if ((n[6].innerHTML === "O" && n[7].innerHTML === "O" && n[8].innerHTML === "O") || (n[6].innerHTML === "X" && n[7].innerHTML === "X" && n[8].innerHTML === "X")) {
+    win();
   }
-  else if (document.getElementById("2-1").innerHTML == "X" &&
-    document.getElementById("2-2").innerHTML == "X" &&
-    document.getElementById("2-3").innerHTML == "X") {
-    document.getElementById("msg").innerHTML = "X - Wins";
+
+  else if ((n[0].innerHTML === "O" && n[3].innerHTML === "O" && n[6].innerHTML === "O") || (n[0].innerHTML === "X" && n[3].innerHTML === "X" && n[6].innerHTML === "X")) {
+    win();
   }
-  // third horizontal line
-  else if (document.getElementById("3-1").innerHTML == "O" &&
-    document.getElementById("3-2").innerHTML == "O" &&
-    document.getElementById("3-3").innerHTML == "O") {
-    document.getElementById("msg").innerHTML = "O - Wins";
+
+  else if ((n[1].innerHTML === "O" && n[4].innerHTML === "O" && n[7].innerHTML === "O") || (n[1].innerHTML === "X" && n[4].innerHTML === "X" && n[7].innerHTML === "X")) {
+    win();
   }
-  else if (document.getElementById("3-1").innerHTML == "X" &&
-    document.getElementById("3-2").innerHTML == "X" &&
-    document.getElementById("3-3").innerHTML == "X") {
-    document.getElementById("msg").innerHTML = "X - Wins";
+
+  else if ((n[2].innerHTML === "O" && n[5].innerHTML === "O" && n[8].innerHTML === "O") || (n[2].innerHTML === "X" && n[5].innerHTML === "X" && n[8].innerHTML === "X")) {
+    win();
   }
-  // first vertical line
-  else if (document.getElementById("1-1").innerHTML == "O" &&
-    document.getElementById("2-1").innerHTML == "O" &&
-    document.getElementById("3-1").innerHTML == "O") {
-    document.getElementById("msg").innerHTML = "O - Wins";
+
+  else if ((n[0].innerHTML === "O" && n[4].innerHTML === "O" && n[8].innerHTML === "O") || (n[0].innerHTML === "X" && n[4].innerHTML === "X" && n[8].innerHTML === "X")) {
+    win();
   }
-  else if (document.getElementById("1-1").innerHTML == "X" &&
-    document.getElementById("2-1").innerHTML == "X" &&
-    document.getElementById("3-1").innerHTML == "X") {
-    document.getElementById("msg").innerHTML = "X - Wins";
-  }
-  // second vertical line
-  else if (document.getElementById("1-2").innerHTML == "O" &&
-    document.getElementById("2-2").innerHTML == "O" &&
-    document.getElementById("3-2").innerHTML == "O") {
-    document.getElementById("msg").innerHTML = "O - Wins";
-  }
-  else if (document.getElementById("1-2").innerHTML == "X" &&
-    document.getElementById("2-2").innerHTML == "X" &&
-    document.getElementById("3-2").innerHTML == "X") {
-    document.getElementById("msg").innerHTML = "X - Wins";
-  }
-  // third vertical line
-  else if (document.getElementById("1-3").innerHTML == "O" &&
-    document.getElementById("2-3").innerHTML == "O" &&
-    document.getElementById("3-3").innerHTML == "O") {
-    document.getElementById("msg").innerHTML = "O - Wins";
-  }
-  else if (document.getElementById("1-3").innerHTML == "X" &&
-    document.getElementById("2-3").innerHTML == "X" &&
-    document.getElementById("3-3").innerHTML == "X") {
-    document.getElementById("msg").innerHTML = "X - Wins";
-  }
-  // l to r diagonal
-  else if (document.getElementById("1-1").innerHTML == "O" &&
-    document.getElementById("2-2").innerHTML == "O" &&
-    document.getElementById("3-3").innerHTML == "O") {
-    document.getElementById("msg").innerHTML = "O - Wins";
-  }
-  else if (document.getElementById("1-1").innerHTML == "X" &&
-    document.getElementById("2-2").innerHTML == "X" &&
-    document.getElementById("3-3").innerHTML == "X") {
-    document.getElementById("msg").innerHTML = "X - Wins";
-  }
-  // r to l diagonal
-  else if (document.getElementById("1-3").innerHTML == "O" &&
-    document.getElementById("2-2").innerHTML == "O" &&
-    document.getElementById("3-1").innerHTML == "O") {
-    document.getElementById("msg").innerHTML = "O - Wins";
-  }
-  else if (document.getElementById("1-3").innerHTML == "X" &&
-    document.getElementById("2-2").innerHTML == "X" &&
-    document.getElementById("3-1").innerHTML == "X") {
-    document.getElementById("msg").innerHTML = "X - Wins";
-  }
-  else {
-    trn_change()
+
+  else if ((n[2].innerHTML === "O" && n[4].innerHTML === "O" && n[6].innerHTML === "O") || (n[2].innerHTML === "X" && n[4].innerHTML === "X" && n[6].innerHTML === "X")) {
+    win();
   }
 }
-function trn_change() {
-  if (a == "O") {
-    a = "X";
+
+function win(){
+  document.getElementById("msg").innerHTML = `${turn} - wins`;
+  for (let r = 1; r <= 3; r++) {
+    for (let c = 1; c <= 3; c++) {
+      document.getElementById(`${r}-${c}`).removeAttribute("onclick");
+    }
   }
-  else if (a == "X") {
-    a = "O";
-  }
-  return a;
-}
-function one_one() {
-  document.getElementById("1-1").innerHTML = a;
-  document.getElementById("one-one").removeAttribute("onclick");
-  return a;
-}
-function one_two() {
-  document.getElementById("1-2").innerHTML = a;
-  document.getElementById("one-two").removeAttribute("onclick");
-  return a;
-}
-function one_three() {
-  document.getElementById("1-3").innerHTML = a;
-  document.getElementById("one-three").removeAttribute("onclick");
-  return a;
-}
-function two_one() {
-  document.getElementById("2-1").innerHTML = a;
-  document.getElementById("two-one").removeAttribute("onclick");
-  return a;
-}
-function two_two() {
-  document.getElementById("2-2").innerHTML = a;
-  document.getElementById("two-two").removeAttribute("onclick");
-  return a;
-}
-function two_three() {
-  document.getElementById("2-3").innerHTML = a;
-  document.getElementById("two-three").removeAttribute("onclick");
-  return a;
-}
-function three_one() {
-  document.getElementById("3-1").innerHTML = a;
-  document.getElementById("three-one").removeAttribute("onclick");
-  return a;
-}
-function three_two() {
-  document.getElementById("3-2").innerHTML = a;
-  document.getElementById("three-two").removeAttribute("onclick");
-  return a;
-}
-function three_three() {
-  document.getElementById("3-3").innerHTML = a;
-  document.getElementById("three-three").removeAttribute("onclick");
-  return a;
 }

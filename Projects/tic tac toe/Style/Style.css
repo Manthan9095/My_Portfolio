@@ -1,46 +1,56 @@
-body{
+body {
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#background{
+
+#background {
   background-color: rgb(255, 208, 105);
   height: 100vh;
 }
-#title{
+
+#title {
   display: flex;
   justify-content: center;
 }
-#game-area{
+
+#game-area {
   display: flex;
   justify-content: center;
-  padding-top:3vh;
+  padding-top: 3vh;
 }
-.game-btn{
+
+.game-btn {
   height: 6rem;
   width: 6rem;
   background-color: rgb(192, 192, 192);
   border: 0px;
   box-sizing: border-box;
+  font-size: 5em;
 }
-.game-btn:hover{
+
+.game-btn:hover {
   background-color: gray;
   cursor: pointer;
 }
-#info{
+
+#info {
   display: flex;
   justify-content: center;
 }
-#p1info{
+
+#p1info {
   height: 10px;
   text-align: center;
   padding: 1em;
 }
-#p2info{
+
+#p2info {
   height: 10px;
   text-align: center;
   padding: 1em;
 }
-#p3info{
+
+#p3info {
   height: 10px;
   text-align: center;
   padding: 1em;
